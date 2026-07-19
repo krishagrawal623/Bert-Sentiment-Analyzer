@@ -7,7 +7,7 @@ def predict_sentiment(text: str, threshold: float = 0.70):
     try:
         result = client.predict(
             text,
-            api_name="/predict"   # ✅ IMPORTANT
+            api_name="//predict"   # ✅ IMPORTANT
         )
 
         label = result.get("label", "Unknown")
